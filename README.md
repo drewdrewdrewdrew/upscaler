@@ -94,6 +94,12 @@ python 3_add_border.py final_fused.png 10
 Run the `compare_size.py` script to see the final effect of your upscaling. If you're intending to print the image, the final size should be at LEAST the necessary resolution/dpi for the physical size you're planning.
 
 ```bash
-python compare_size.py input_images/my_image.png output_images/final_fused.png
+python 4_compare_size.py input_images/my_image.png output_images/final_fused.png
 ```
+
+## License
+
+The code in this repository is licensed under the **MIT License**. 
+
+**Note on Model Weights:** This project downloads and uses the `stabilityai/stable-diffusion-x4-upscaler` model. These model weights are licensed under the [CreativeML Open RAIL-M](https://huggingface.co/spaces/CompVis/creativeml-openrail-m) license, which includes specific use-case restrictions (e.g., prohibiting the generation of illegal or harmful content). By using this pipeline, you agree to abide by the terms of that license.
 
