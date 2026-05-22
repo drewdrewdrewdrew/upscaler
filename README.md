@@ -2,6 +2,12 @@
 
 This project is a generative image upscaling pipeline. It uses Stable Diffusion to perform a 4x upscale in tiles, followed by an "adaptive fusion" step that suppresses hallucinations in flat, untextured areas.
 
+<p align="center">
+  <img src="assets/16x_comparison.png" width="80%" />
+  <br>
+  <em>Comparison of a 16x upscale: Original image with target region in blue (left), Standard Bicubic upscale (center), Generative Upscale + Adaptive Fusion (right). Not perfect, but you get the idea :)</em>
+</p>
+
 ## Hardware Requirements
 
 **A dedicated GPU (NVIDIA with CUDA support) is strongly recommended.** The `stable-diffusion-x4-upscaler` is a large model (the weights are several gigabytes). While running on a CPU is technically possible, it will be prohibitively slow. 
