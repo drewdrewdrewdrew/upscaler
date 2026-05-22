@@ -2,6 +2,12 @@
 
 This project is a generative image upscaling pipeline. It uses Stable Diffusion to perform a 4x upscale in tiles, followed by an "adaptive fusion" step that suppresses hallucinations in flat, untextured areas.
 
+## Hardware Requirements
+
+**A dedicated GPU (NVIDIA with CUDA support) is strongly recommended.** The `stable-diffusion-x4-upscaler` is a large model (the weights are several gigabytes). While running on a CPU is technically possible, it will be prohibitively slow. 
+
+Because the script processes the image in tiles, it is relatively memory-efficient, but a GPU with at least **8GB of VRAM** is recommended. If you encounter out-of-memory (OOM) errors, try reducing the `--tile-size` parameter in Step 1.
+
 ## Main Workflow
 
 ### 0. Setup
