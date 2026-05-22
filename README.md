@@ -58,8 +58,7 @@ python 2_adaptive_fusion.py --original my_image.png --upscaled upscaled.png --ou
 *Example: Compare the raw Stable Diffusion output (left), which may have hallucinations in flat areas, with the fused result (right), where flat areas are cleaned up.*
 
 <p align="center">
-  <img src="full_2x_conservative.png" width="45%" />
-  <img src="full_2x_conservative_fused.png" width="45%" />
+  <img src="assets/fusion.png"
 </p>
 
 **Key Parameters to Tune:**
