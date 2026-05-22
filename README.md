@@ -1,6 +1,6 @@
 # Upscaler
 
-This project is a generative image upscaling pipeline. It uses Stable Diffusion to perform a 4x upscale in tiles, followed by an "adaptive fusion" step that suppresses hallucinations in flat, untextured areas.
+This project is a generative image upscaling pipeline. It uses Stable Diffusion to perform a 4x upscale in tiles slide across an image, stitching them back together, followed by an "adaptive fusion" step that suppresses hallucinations in flat, untextured areas.
 
 <p align="center">
   <img src="assets/16x_comparison.png" width="80%" />
